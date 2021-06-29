@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/bootstrap.css">
+    
+    <link rel="stylesheet" href="assets/flag-icons.css">
+    <link rel="stylesheet" href="assets/custom/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary  fixed-top">
+        <a class="navbar-brand" href="#">Logo Here</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto flex-column vertical-nav bg-dark ">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><i class="fa fa-tachometer mr-2" aria-hidden="true"></i>Dashboard  <span></span></a> 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./table.html"><i class="fa fa-table mr-2" aria-hidden="true"></i>Table   </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="form.html"><i class="fa fa-plus-square-o mr-2" aria-hidden="true"></i>Forms </a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown show">
+                <a class="nav-link dropdown-toggle" href="index.html" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More links</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-cog mr-2" aria-hidden="true"></i>Settings </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              User <img src="assets/images/img.svg" class="ml-2" alt="">
+                              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Log Out</a>
+              </div>
+            </li>
+          </ul>
+      
+        </div>
+     </nav>
+      <div class="content">
+        <h6 class="sub" style="color: #6c757d">Dashboard</h6>
+        <div class="row">
+          <div class=" col-lg-6 col-sm-12">
+            <div class="row">
+              <div class="col con">
+                <h6 class="sub">Customers</h6>
+                <p></p>
+                <p></p>
+                <div class="orders">36254</div>
+                <p></p>
+                <p></p>
+                <div class="inc">+5.6%</div>
+                <span class="info">Since last month</span>
+              </div>
+              <div class="col con">
+                <h6 class="sub">Orders</h6>
+                <p></p>
+                <p></p>
+                <div class="orders">5543</div>
+                <p></p>
+                <p></p>
+                <div class="dec">-1.08%</div>
+                <span class="info">Since last month</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col con">
+                <h6 class="sub">Revenue</h6>
+                <p></p>
+                <p></p>
+                <div class="orders">$6254</div>
+                <p></p>
+                <p></p>
+                <div class="dec">-7%</div>
+                <span class="info">Since last month</span>
+              </div>
+              <div class="col con">
+                <h6 class="sub">Growth</h6>
+                <p></p>
+                <p></p>
+                <div class="orders">+30.56%</div>
+                <p></p>
+                <p></p>
+                <div class="inc">+4.87%</div>
+                <span class="info">Since last month</span>
+              </div>
+            </div>
+          </div>
+         
+          <div class="col con">
+            <h6 class="sub mb-3">TOTAL SALES <i class="fa fa-bars dots" aria-hidden="true"></i></h6>
+            <canvas id="myChart"></canvas>            
+            <p></p>
+            <ul class="list">
+              <li id="d">Direct - <span class="value">$300.56</span></li>
+              <hr />
+              <li id="a">Affiliate - <span class="value">$135.18</span></li>
+              <hr />
+              <li id="s">Spons. - <span class="value">$48.96</span></li>
+              <hr />
+              <li id="e">E-mail - <span class="value">$154.02</span></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+      <script type="text/javascript" src="assets/chart.js"></script>
+      <script src="assets/jquery.js"></script>
+      <script src="assets/popper.js"></script>
+      <script src="assets/bootstrap.js"></script>
+      <script src="assets/npm-charts.js"></script>
+      <script src="assets/custom/main.js"></script>   
+   </body>
+</html>
